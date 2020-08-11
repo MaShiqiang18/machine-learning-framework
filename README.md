@@ -179,5 +179,7 @@ ____
     train_test_data--用于训练的数据
             原始数据
             数据预处理+特征工程后的数据
+            由getKfoldIndex.py生成的文件
+            
                     
    
