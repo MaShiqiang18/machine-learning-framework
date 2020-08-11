@@ -35,7 +35,7 @@ def preprocess_main(data_ori, categorical_features=None, num_features=None, time
 
     num_null = data.isnull().sum().sum()
     if (num_null > 0) & fillnan:
-        print('\n\n************************处理空值************************')
+        print('\n\n*********************处理NaN、Inf*********************')
         ### 特殊空值（-）的处理，收到指定代替
         # sp_feature = ''
         # concat_data[sp_feature] = concat_data[sp_feature].replace('-', 0).astype('float16')

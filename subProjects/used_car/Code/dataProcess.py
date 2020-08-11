@@ -57,6 +57,20 @@ concat_data, abnormal_index_set = run_preprocess.preprocess_main(concat_data, ca
 abnormal_index_train = [x for x in abnormal_index_set if x <= lastTrainIndex]
 abnormal_index_test = [x for x in abnormal_index_set if x > lastTrainIndex]
 
+# 删除训练集中的异常值（所在行）
+print('\n=============================>  删除异常值\n')
+X_data = concat_data.iloc[:len(Train_data), :]
+Y_data = Train_data.loc[:, ['price']]
+X_test = concat_data.iloc[len(Train_data):, :]
+for i in abnormal_index_train:
+    X_data.drop(i, axis=0, inplace=True)
+    Y_data.drop(i, axis=0, inplace=True)
+
+X_data.reset_index(drop=True, inplace=True)
+Y_data.reset_index(drop=True, inplace=True)
+
+concat_data = pd.concat([X_data, X_test])
+
 print('\n=============================>  特征工程开始')
 print('')
 ## 设定参数
@@ -94,14 +108,7 @@ X_data = data_new.iloc[:len(Train_data), :][numerical_cols]
 Y_data = Train_data.loc[:, ['price']]
 X_test = data_new.iloc[len(Train_data):, :][numerical_cols]
 
-# 删除训练集中的异常值（所在行）
-print('\n=============================>  删除异常值\n')
-for i in abnormal_index_train:
-    X_data.drop(i, axis=0, inplace=True)
-    Y_data.drop(i, axis=0, inplace=True)
 
-X_data.reset_index(drop=True, inplace=True)
-Y_data.reset_index(drop=True, inplace=True)
 
 print('\n=============================>  使用平均值编码\n')
 Feature_list = ['model', 'brand', 'name', 'regionCode']

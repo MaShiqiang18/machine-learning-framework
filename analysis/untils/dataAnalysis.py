@@ -8,8 +8,8 @@ import seaborn as sns
 class Analysis_all_features(object):
     """
     所有特征的分析
-    训练集中：cols是label和features的集合
-    测试集中：cols即features
+    若data是训练集：cols是label和features的集合
+    若data是测试集：cols即features
     """
     def __init__(self, data, cols, label=None, train=True):
         self.data = data
@@ -20,7 +20,7 @@ class Analysis_all_features(object):
             # 训练集数据，若未指定label，默认最后一列作为label
             if not label:
                 self.label = cols[-1]
-                print("请确认是否以 '{}'作为label".format(self.label))
+                print("请确认是否默认以 '{}'作为label".format(self.label))
                 self.features.pop()
             else:
                 self.label = label
@@ -46,7 +46,7 @@ class Analysis_all_features(object):
 
     def percentage_miss(self):
         """
-        特征值种类、缺失值占比、最大特征值占比、特征类型分析
+        特征值种类、缺失值占比、最大特征值占比、特征数据类型分析
         :return:
         """
         print('\n************统计特征值种类、缺失值占比、最大特征值占比、特征类型分析************')
@@ -100,8 +100,8 @@ class Analysis_all_features(object):
 class Analysis_categorical_features(object):
     """
     类别特征的分析
-    训练集中：cols是label和features的集合
-    测试集中：cols即features
+    若data是训练集：cols是label和features的集合
+    若data是测试集：cols即features
     """
     def __init__(self, data, cols, label=None, train=True):
         self.data = data
@@ -112,7 +112,7 @@ class Analysis_categorical_features(object):
             # 训练集数据，若未指定label，默认最后一列作为label
             if not label:
                 self.label = cols[-1]
-                print("请确认是否以 '{}'作为label".format(self.label))
+                print("请确认是否默认以 '{}'作为label".format(self.label))
                 self.features.pop()
             else:
                 self.label = label
@@ -127,9 +127,9 @@ class Analysis_categorical_features(object):
                 print("测试集中不需要label")
                 self.label = None
 
-    def show_features_distribution(self):
+    def show_features_distribution(self, show_picture=False):
         """
-        每个特征，不同特征值的数量统计
+        每个特征，不同特征值的数量统计，并绘制饼图
         :return:
         """
         print('\n********************不同特征，特征值统计********************')
@@ -139,17 +139,19 @@ class Analysis_categorical_features(object):
             labels = series_value_counts.index.tolist()
             values = series_value_counts.values
 
-            fig = plt.figure()
-            plt.pie(values, labels=labels, autopct='%1.2f%%')  # 画饼图（数据，数据对应的标签，百分数保留两位小数点）
-            plt.title("Pie chart of "+ cat_fea)
-            # plt.show()
+            if show_picture:
+                fig = plt.figure()
+                plt.pie(values, labels=labels, autopct='%1.2f%%')  # 画饼图（数据，数据对应的标签，百分数保留两位小数点）
+                plt.title("Pie chart of "+ cat_fea)
+                # plt.show()
 
 
             print(cat_fea + "的特征分布如下：")
             print("{}特征有个{}不同的值".format(cat_fea, self.data[cat_fea].nunique()))
             print(series_value_counts)
             print('\n\n')
-        plt.show()
+        if show_picture:
+            plt.show()
 
     def view_of_violinplot(self):
         """
@@ -179,7 +181,7 @@ class Analysis_categorical_features(object):
             g = sns.FacetGrid(f, col="variable", col_wrap=1, sharex=False, sharey=False, height=5)
             g = g.map(show_count_plot, "value", f=c)
 
-    def change_datatype(self):
+    def trans_datatype(self):
         """
         将类别特征的数据类型转化为category，同时处理NaN数据
         :return:
@@ -197,8 +199,8 @@ class Analysis_categorical_features(object):
 class Analysis_numeric_features(object):
     """
     数值特征的分析
-    训练集中：cols是label和features的集合
-    测试集中：cols即features
+    若data是训练集：cols是label和features的集合
+    若data是测试集：cols即features
     """
     def __init__(self, data, cols, label=None, train=True):
         self.data = data
@@ -209,7 +211,7 @@ class Analysis_numeric_features(object):
             # 训练集数据，若未指定label，默认最后一列作为label
             if not label:
                 self.label = cols[-1]
-                print("请确认是否以 '{}'作为label".format(self.label))
+                print("请确认是否默认以 '{}'作为label".format(self.label))
                 self.features.pop()
             else:
                 self.label = label
@@ -307,7 +309,7 @@ class Analysis_numeric_features(object):
                 plt.title(kwargs['c']+' bar')
                 plt.show()
             else:
-                sns.barplot(x=x)
+                sns.barplot(x)
                 x = plt.xticks(rotation=90)
                 plt.title(kwargs['c']+' bar')
                 plt.show()

@@ -27,7 +27,7 @@ def analysis_main(data, columns, labels=None, categorical_features=None, num_fea
         analysis_categorical_features.show_features_distribution()
         analysis_categorical_features.view_of_violinplot()
         analysis_categorical_features.view_of_count_plot()
-        analysis_categorical_features.change_datatype()
+        analysis_categorical_features.trans_datatype()
 
 
     ## 数值特征的分析
@@ -43,10 +43,11 @@ def analysis_main(data, columns, labels=None, categorical_features=None, num_fea
         analysis_numeric_features.show_Skew_and_kurt()
         analysis_numeric_features.view_of_box()
         # classLabel为False时不建议使用
-        # analysis_numeric_features.view_of_bar_plot(classLabel=False)
+        # analysis_numeric_features.view_of_bar_plot(classLabel=True)
         analysis_numeric_features.view_of_distplot()
         analysis_numeric_features.view_of_pairplot()
 
 
     print('=======================> 数据分析过程结束！！！')
+
 
