@@ -6,11 +6,11 @@ frame for machine-learning
 ____
 ## 数据分析--analysis
 ### main:
->#### run_analysis.py
+#### run_analysis.py
 定义了一个analysis_main()方法，将dataAnalysis.py中处理全部特征、类别特征、数值特征的三个类别分别实例化，并调用。在subProjects中可直接调用run_analysis.py，也可参照其再重新定义。
                          
 ### untils:
->#### dataAnalysis.py定义三个class分别处理全部特征、类别特征、数值特征
+#### dataAnalysis.py定义三个class分别处理全部特征、类别特征、数值特征
     Analysis_all_features: 
         show_shape()--统计样本数，特征数；
         percentage_miss()--统计特征值种类、缺失值占比、最大特征值占比、特征数据类型；
@@ -34,11 +34,11 @@ ____
 ____        
 ## 数据预处理--preProcess
 ### main:
->#### run_preprocess.py
+#### run_preprocess.py
 定义了一个preprocess_main()方法，主要调用dataPreprocess.py来处理数值特征，返回处理后的数据（NaN/Inf已处理，并进行数据类型转化）、识别出的带有异常值的index。在subProjects中可直接调用run_preprocess.py，也可参照其再重新定义。
                          
 ### untils:
->#### dataPreprocess.py--主要三个功能：异常值处理、NaN/Inf处理、数据类型转化
+#### dataPreprocess.py--主要三个功能：异常值处理、NaN/Inf处理、数据类型转化
     异常值处理：outliers_proc()--利用箱型图（四分位线）设立上下限，识别异常值，并返回异常值的index（原数据不变），
                                  可选参数comp，确定是否显示删除异常值后的样本数、小于阈值的数据分布、大于阈值的数据分布，
                                  可选参数show_view，确定是否显示删除异常值前后的箱型图，比较差异。
@@ -53,10 +53,10 @@ ____
 ____             
 ## 特征工程--newFeatures
 ### main:
->#### produceFeatures.py
+#### produceFeatures.py
 定义了一个featureProcess_main()方法，通过调用NewFeatures.py中的方法实现对时间特征、类别特征、数值特征、组合特征分别构建新特征，在subProjects中可直接调用run_preprocess.py，也可参照其再重新定义。一般将训练集和测试集合并后处理，得到所有新特征后，重新拆分为训练集和测试集，之后可调用平均值编码和目标编码进一步构建新特征
 ### untils:
->#### NewFeatures.py--将训练集和测试集合并后处理，对时间特征、类别特征、数值特征、组合特征分别构建新特征
+#### NewFeatures.py--将训练集和测试集合并后处理，对时间特征、类别特征、数值特征、组合特征分别构建新特征
     时间特征：
             date_get_ymdw(): 从时间特征提取年、月、周、日等信息
             date_features(): 计算指定两个时间特征：f1-f2的日期差，以及当前日期与f1的时间差，当前日期与f2的日期差
@@ -76,14 +76,14 @@ ____
             cross_cat_num(): 先按类别特征进行分组，在统计数值特征最大值、最小值、中值等信息
             cross_qua_cat_num(): 给定（类别）特征对，统计共现次数、n unique、熵、比例偏好等信息
          
->#### CodeFeatures.py
+#### CodeFeatures.py
 平均编码，处理特征值满足下面几点：1. 会重复，2. 根据相同的值分组会分出超过一定数量（比如100）的组的（类别）特征
          
->#### targetEncoding.py
+#### targetEncoding.py
 目标编码，与produce_by_statistics()类似先分组后统计，不同的是目标编码是训练集和测试集分开构建新特征的，而后者是可以合并后一起构建的，
 原因是，目标编码分组后统计的是label值（测试集中没有），而produce_by_statistics()是统计其他连续特征的。
                             
->#### SelectFeatures.py
+#### SelectFeatures.py
 指定为回归问题还是分类问题，再使用Filter、Wrapper、Embedded以及通过将特征值乱序等模式，选出最好的K个特征
     
     Filter model(过滤器)-->过滤式选择[单变量分析]
@@ -106,29 +106,29 @@ ____
                   selec_by_features_random_weight(): 根据特征乱序后对模型的影响大小评价特征的重要性
                   selec_by_features_random_plt(): 绘制多次乱序统计重要性的变化的箱型图
                   
->#### ScoreFeatures.py
+#### ScoreFeatures.py
 同SelectFeatures.py的原理，统计出每种方法所有特征的重要性（每一种方法所有特征的重要性得分和为1），求出各个特征所有方法得到的得分的均值、最大值、中值，并绘制得分折线图，返回一个得分表
                            
 ____                           
 ## 建模训练--trainModels
 ### main：
->#### run_train.py
+#### run_train.py
 训练框架，使用不同的随机种子训练runs轮，每轮拆分为folds折，每折使用bagging训练bagging_size次，每折的预测结果是bagging_size次的均值，返回训练集和测试集的预测结果，以及训练集得分
                       
 ### untils：
->#### getKfoldIndex.py
+#### getKfoldIndex.py
 获取指定（训练）数据集（大小）的runs轮folds折的index，以供训练时直接调用
->#### defindMetrics.py
+#### defindMetrics.py
 评价方法，在runs轮folds折训练后的均值计算得分
->#### trainKerasModel.py
+#### trainKerasModel.py
 Keras神经网络模型的训练框架，models下的FCModelLib.py中调用定义好的神经网络结构
->#### trainTreeModel.py
+#### trainTreeModel.py
 树模型（LighGBM、Xgboost）的训练框架
->#### defind_log.py
+#### defind_log.py
 自定义日志记录方法，主要记录模型训练和调参过程中的进度以及花费时间、各阶段的得分
->#### time_tran.py
+#### time_tran.py
 时间格式转化
->#### showFigs.py
+#### showFigs.py
 绘制训练过程中Loss曲线和得分曲线
          
  ____        
@@ -139,17 +139,17 @@ Keras神经网络模型的训练框架，models下的FCModelLib.py中调用定义好的神经网络结构
 ____         
 ## 调参--tuningParams
 ### main：
->#### run_tuning.py
+#### run_tuning.py
 待完善，可调用run_predict.py的训练框架
                       
 ### untils：
->#### bayesianOpt_demo.py
+#### bayesianOpt_demo.py
 使用贝叶斯调参的demo
          
->#### gridSearchCV_demo.py
+#### gridSearchCV_demo.py
 网格搜索调参的demo
          
->#### stepBystep_demo.py
+#### stepBystep_demo.py
 逐步调参的demo
          
  ____
@@ -158,7 +158,7 @@ ____
 ### config_demo.py--子项目config时可借鉴的demo结构
     
 ### used_car--子项目名
->#### Code--代码
+#### Code--代码
     config.py--配置文件
         主要可划分为：数据集相关参数、模型训练相关参数、训练框架交叉验证相关参数、数据路径相关参数
     dataAnalysis.py
@@ -166,7 +166,7 @@ ____
     bayesianOpt_runs_folds.py
     train.py
     predict.py
->#### Data--数据
+#### Data--数据
     notes--保存训练、调参过程中记录的数据，按照标记区别不同方法处理的数据集和模型训练，保存到不同的子文件夹下
         mark1
         mark2
