@@ -247,7 +247,7 @@ def produce_by_statistics(data, num_col, cat_col, add_new=True):
           '统计总数、最大值、最小值、中值、总和、均值、方差、偏度、峰度等信息'.format(num_col, cat_col))
     print('注意可能会产生inf值（累加过大）')
     features_ori = data.columns
-    for col_1 in cat_col:
+    for col_1 in tqdm(cat_col):
         Train_gb = data.groupby(col_1)
         all_info = {}
         last = ''

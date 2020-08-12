@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1661b59b-8ec7-415c-9420-50b71f93774e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subProjects/happiness/Code/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subProjects/happiness/Code/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subProjects/happiness/Code/getData.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subProjects/happiness/Data/train_test_data/happiness_index.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subProjects/happiness/Data/train_test_data/happiness_submit.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subProjects/happiness/Data/train_test_data/happiness_survey_cgss2015.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subProjects/happiness/Data/train_test_data/happiness_test_abbr.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subProjects/happiness/Data/train_test_data/happiness_test_complete.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subProjects/happiness/Data/train_test_data/happiness_train_abbr.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subProjects/happiness/Data/train_test_data/happiness_train_complete.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/framework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/framework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/main/run_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/main/run_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newFeatures/untils/NewFeatures.py" beforeDir="false" afterPath="$PROJECT_DIR$/newFeatures/untils/NewFeatures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newFeatures/untils/ScoreFeatures.py" beforeDir="false" afterPath="$PROJECT_DIR$/newFeatures/untils/ScoreFeatures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subProjects/used_car/Code/dataProcess.py" beforeDir="false" afterPath="$PROJECT_DIR$/subProjects/used_car/Code/dataProcess.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,110 +29,74 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1602964849">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.38" value="1" />
-          <entry key="project.opened" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="csv" value="6" />
-          <entry key="jpg" value="1" />
-          <entry key="log" value="15" />
-          <entry key="py" value="274" />
-          <entry key="pyi" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Image" value="1" />
-          <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="274" />
-          <entry key="PythonStub" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="105" />
-          <entry key="log" value="1" />
-          <entry key="py" value="24290" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="106" />
-          <entry key="Python" value="24290" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1107461421">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="md" value="1" />
-          <entry key="py" value="32" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Markdown" value="1" />
-          <entry key="Python" value="32" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="1" />
-          <entry key="md" value="3085" />
-          <entry key="py" value="131" />
-          <entry key="txt" value="14" />
-          <entry key="xml" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Markdown" value="3085" />
-          <entry key="PLAIN_TEXT" value="15" />
-          <entry key="Python" value="131" />
-          <entry key="XML" value="3" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/machine_learning_framework$dataProcess.coverage" NAME="dataProcess Coverage Results" MODIFIED="1597241137734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/subProjects/used_car/Code" />
+    <SUITE FILE_PATH="coverage/machine_learning_framework$getData.coverage" NAME="getData Coverage Results" MODIFIED="1597241939732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/subProjects/happiness/Code" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="216">
-                <caret line="8" selection-start-line="8" selection-end-line="8" />
-              </first_editor>
-              <second_editor />
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subProjects/used_car/Code/dataProcess.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="170" column="23" lean-forward="true" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
+              <folding>
+                <element signature="e#14#33#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subProjects/used_car/Code/config.py">
+        <entry file="file://$PROJECT_DIR$/newFeatures/untils/NewFeatures.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-128">
-              <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+            <state relative-caret-position="114">
+              <caret line="6" column="9" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newFeatures/untils/ScoreFeatures.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="371" column="25" lean-forward="true" selection-start-line="371" selection-start-column="25" selection-end-line="371" selection-end-column="25" />
+              <folding>
+                <element signature="e#14#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/subProjects/happiness/Code/getData.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="e#13#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subProjects/happiness/Code/config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="85" column="23" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subProjects/used_car/Code/dataAnalysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+              <folding>
+                <element signature="e#14#33#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,9 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>exp</find>
-      <find>staticmethod</find>
-      <find>prior_weight_func</find>
       <find>metrix_name</find>
       <find>score_meanBagging_val</find>
       <find>log_time</find>
@@ -161,6 +138,10 @@
       <find>showFig</find>
       <find>shape</find>
       <find>coef_</find>
+      <find>score</find>
+      <find>self.score</find>
+      <find>MINE</find>
+      <find>score_of_mic</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,9 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/training_model/untils/train_keras.py" />
-        <option value="$PROJECT_DIR$/training_model/untils/trainTreeModel.py" />
-        <option value="$PROJECT_DIR$/models/FCNN.py" />
         <option value="$PROJECT_DIR$/models/simFCNN.py" />
         <option value="$PROJECT_DIR$/models/DNN.py" />
         <option value="$PROJECT_DIR$/training/untils/trainKerasModel_cp.py" />
@@ -206,7 +184,6 @@
         <option value="$PROJECT_DIR$/Sub_Projects/used_car/Code/dataProcess.py" />
         <option value="$PROJECT_DIR$/newFeatures/main/run_features_process.py" />
         <option value="$PROJECT_DIR$/newFeatures/untils/dataNewFeatures.py" />
-        <option value="$PROJECT_DIR$/newFeatures/untils/NewFeatures.py" />
         <option value="$PROJECT_DIR$/newFeatures/main/produceFeatures.py" />
         <option value="$PROJECT_DIR$/trainModels/untils/time_tran.py" />
         <option value="$PROJECT_DIR$/subProjects/used_car/Code/bayesianOpt_runs_folds.py" />
@@ -216,17 +193,21 @@
         <option value="$PROJECT_DIR$/newFeatures/untils/scoreFeatures.py" />
         <option value="$PROJECT_DIR$/subProjects/used_car/Code/dataAnalysis.py" />
         <option value="$PROJECT_DIR$/analysis/untils/dataAnalysis.py" />
-        <option value="$PROJECT_DIR$/analysis/main/run_analysis.py" />
         <option value="$PROJECT_DIR$/preProcess/main/run_preprocess.py" />
-        <option value="$PROJECT_DIR$/subProjects/used_car/Code/dataProcess.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/newFeatures/untils/NewFeatures.py" />
+        <option value="$PROJECT_DIR$/subProjects/used_car/Code/dataProcess.py" />
+        <option value="$PROJECT_DIR$/subProjects/happiness/Code/config.py" />
+        <option value="$PROJECT_DIR$/newFeatures/untils/ScoreFeatures.py" />
+        <option value="$PROJECT_DIR$/analysis/main/run_analysis.py" />
+        <option value="$PROJECT_DIR$/subProjects/happiness/Code/getData.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="822" />
-    <option name="y" value="81" />
-    <option name="width" value="1436" />
+    <option name="x" value="358" />
+    <option name="y" value="199" />
+    <option name="width" value="1437" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -235,7 +216,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,17 +226,35 @@
             <path>
               <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="predictByModels" type="462c0819:PsiDirectoryNode" />
+              <item name="subProjects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
               <item name="subProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="happiness" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="subProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="happiness" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="subProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="happiness" type="462c0819:PsiDirectoryNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="subProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="happiness" type="462c0819:PsiDirectoryNode" />
+              <item name="Data" type="462c0819:PsiDirectoryNode" />
+              <item name="train_test_data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
@@ -270,38 +268,6 @@
               <item name="subProjects" type="462c0819:PsiDirectoryNode" />
               <item name="used_car" type="462c0819:PsiDirectoryNode" />
               <item name="Code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="subProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="used_car" type="462c0819:PsiDirectoryNode" />
-              <item name="Data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="subProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="used_car" type="462c0819:PsiDirectoryNode" />
-              <item name="Data" type="462c0819:PsiDirectoryNode" />
-              <item name="notes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="subProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="used_car" type="462c0819:PsiDirectoryNode" />
-              <item name="Data" type="462c0819:PsiDirectoryNode" />
-              <item name="notes" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="subProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="used_car" type="462c0819:PsiDirectoryNode" />
-              <item name="Data" type="462c0819:PsiDirectoryNode" />
-              <item name="train_test_data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
@@ -324,26 +290,28 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../framework" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\PycharmProjects\framework\subProjects" />
-      <recent name="C:\Users\admin\PycharmProjects\framework\newFeatures\untils" />
-      <recent name="C:\Users\admin\PycharmProjects\framework\subProjects\used_car\Data\train_test_data" />
-      <recent name="C:\Users\admin\PycharmProjects\framework\predict_demo" />
-      <recent name="C:\Users\admin\PycharmProjects\framework\predict_demo\main" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\24973\machine-learning-framework\subProjects" />
       <recent name="C:\Users\admin\PycharmProjects\framework\subProjects\used_car\Code" />
       <recent name="C:\Users\admin\PycharmProjects\framework\predict\main" />
       <recent name="C:\Users\admin\PycharmProjects\framework\predict" />
       <recent name="C:\Users\admin\PycharmProjects\framework\Sub_Projects\used_car\Code" />
-      <recent name="C:\Users\admin\PycharmProjects\framework\Sub_Projects\used_car\Data\train_test_data" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\24973\machine-learning-framework\subProjects\happiness\Code" />
+      <recent name="C:\Users\24973\machine-learning-framework\subProjects\happiness\Data\train_test_data" />
+      <recent name="C:\Users\admin\PycharmProjects\framework\subProjects" />
+      <recent name="C:\Users\admin\PycharmProjects\framework\newFeatures\untils" />
+      <recent name="C:\Users\admin\PycharmProjects\framework\subProjects\used_car\Data\train_test_data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -358,28 +326,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dataAnalysis">
-    <configuration name="SelectFeatures" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="framework" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/newFeatures/untils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/newFeatures/untils/SelectFeatures.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.getData">
     <configuration name="dataAnalysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="framework" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -392,6 +339,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/subProjects/used_car/Code/dataAnalysis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -413,7 +361,30 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/subProjects/used_car/Code/dataProcess.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="getData" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="framework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/subProjects/happiness/Code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/subProjects/happiness/Code/getData.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -434,6 +405,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analysis/main/run_analysis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -455,6 +427,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="D:\GitHubProjects\machine-learning-framework\newFeatures\untils\ScoreFeatures.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -467,17 +440,17 @@
     <list>
       <item itemvalue="Python.dataProcess" />
       <item itemvalue="Python.run_analysis" />
-      <item itemvalue="Python.SelectFeatures" />
       <item itemvalue="Python.scoreFeatures" />
       <item itemvalue="Python.dataAnalysis" />
+      <item itemvalue="Python.getData" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.getData" />
+        <item itemvalue="Python.dataProcess" />
         <item itemvalue="Python.dataAnalysis" />
         <item itemvalue="Python.run_analysis" />
-        <item itemvalue="Python.dataProcess" />
         <item itemvalue="Python.scoreFeatures" />
-        <item itemvalue="Python.SelectFeatures" />
       </list>
     </recent_temporary>
   </component>
@@ -491,6 +464,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595906317004</updated>
+      <workItem from="1597235128574" duration="8814000" />
     </task>
     <task id="LOCAL-00001" summary="补充readme.md">
       <created>1597129205222</created>
@@ -516,16 +490,20 @@
       <configuration name="Unittests for use_log.MyTest" configurationId="tests" />
     </history-entry>
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8814000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22866175" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07841552" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33570158" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.44468546" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -534,6 +512,8 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="SciView" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -558,8 +538,8 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="补充readme.md" />
@@ -577,27 +557,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tuningParams/untils/gridSearchCV_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trainModels/untils/defind_log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1431">
-          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trainModels/untils/defindMetrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trainModels/untils/getKfoldIndex.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -605,146 +564,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/utils/validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="170" selection-start-line="170" selection-end-line="170" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/feature_selection/_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="692" selection-start-line="692" selection-end-line="692" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/pandas/core/reshape/concat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="356" selection-start-line="356" selection-end-line="356" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/datasets/_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1089">
-          <caret line="948" column="4" selection-start-line="948" selection-start-column="4" selection-end-line="948" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/mlxtend/feature_selection/sequential_feature_selector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-331">
-          <caret line="178" column="28" selection-start-line="178" selection-start-column="28" selection-end-line="178" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/feature_selection/_variance_threshold.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="47" column="35" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/feature_selection/_univariate_selection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="516" column="8" selection-start-line="516" selection-start-column="8" selection-end-line="516" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/feature_selection/_rfe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6210">
-          <caret line="123" column="8" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/linear_model/_logistic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9777">
-          <caret line="1355" column="22" selection-start-line="1355" selection-start-column="17" selection-end-line="1355" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/svm/_classes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4644">
-          <caret line="181" column="8" selection-start-line="181" selection-start-column="8" selection-end-line="181" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/linear_model/_ridge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12855">
-          <caret line="1534" column="23" selection-start-line="1534" selection-start-column="18" selection-end-line="1534" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/xgboost/sklearn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="751" column="50" selection-start-line="751" selection-start-column="33" selection-end-line="751" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/ensemble/_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="164" selection-start-line="164" selection-end-line="164" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="10263" column="12" selection-start-line="10263" selection-start-column="12" selection-end-line="10263" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="2719" column="4" selection-start-line="2719" selection-start-column="4" selection-end-line="2719" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/metrics/_scorer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="402" selection-start-line="402" selection-end-line="402" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/IPython/core/display.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3211">
-          <caret line="130" column="4" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/eli5/ipython.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-835">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/eli5/sklearn/permutation_importance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="143" column="8" selection-start-line="143" selection-start-column="8" selection-end-line="143" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/utils/validation.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/feature_selection/_base.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/base.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/pandas/core/reshape/concat.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/datasets/_base.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/mlxtend/feature_selection/sequential_feature_selector.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/feature_selection/_variance_threshold.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/feature_selection/_univariate_selection.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/feature_selection/_rfe.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/linear_model/_logistic.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/svm/_classes.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/linear_model/_ridge.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/xgboost/sklearn.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/ensemble/_base.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/pandas/core/generic.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/matplotlib/pyplot.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/sklearn/metrics/_scorer.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/IPython/core/display.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/eli5/ipython.py" />
+    <entry file="file://C:/Program Files/Anaconda3/envs/TF2Keras/Lib/site-packages/eli5/sklearn/permutation_importance.py" />
     <entry file="file://$PROJECT_DIR$/subProjects/config_demo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -769,33 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/analysis/untils/dataAnalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="308" column="45" lean-forward="true" selection-start-line="308" selection-start-column="45" selection-end-line="308" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subProjects/used_car/Code/dataAnalysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#14#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analysis/main/run_analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="e#14#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/preProcess/main/run_preprocess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-479">
@@ -810,16 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newFeatures/untils/NewFeatures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="306" column="56" lean-forward="true" selection-start-line="306" selection-start-column="56" selection-end-line="306" selection-end-column="56" />
-          <folding>
-            <element signature="e#14#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/newFeatures/main/produceFeatures.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
@@ -831,20 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="38" column="67" selection-start-line="38" selection-start-column="67" selection-end-line="38" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subProjects/used_car/Code/dataProcess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="121" column="45" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newFeatures/untils/ScoreFeatures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="468" column="46" selection-start-line="468" selection-start-column="46" selection-end-line="468" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -926,20 +714,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subProjects/used_car/Code/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-128">
-          <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="216">
-            <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <first_editor relative-caret-position="190">
+            <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subProjects/happiness/Data/train_test_data/happiness_test_abbr.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subProjects/used_car/Code/dataProcess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="170" column="23" lean-forward="true" selection-start-line="170" selection-start-column="23" selection-end-line="170" selection-end-column="23" />
+          <folding>
+            <element signature="e#14#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newFeatures/untils/NewFeatures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newFeatures/untils/ScoreFeatures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="371" column="25" lean-forward="true" selection-start-line="371" selection-start-column="25" selection-end-line="371" selection-end-column="25" />
+          <folding>
+            <element signature="e#14#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/untils/dataAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subProjects/used_car/Code/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subProjects/happiness/Code/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="85" column="23" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subProjects/used_car/Code/dataAnalysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="e#14#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/main/run_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="e#14#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subProjects/happiness/Code/getData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#13#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

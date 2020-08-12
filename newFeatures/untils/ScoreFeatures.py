@@ -39,6 +39,7 @@ from sklearn.feature_selection import f_regression, mutual_info_regression
 from scipy.stats import pearsonr
 from minepy import MINE
 
+
 import warnings
 
 warnings.simplefilter("ignore")
@@ -191,7 +192,7 @@ class Score_of_features(object):
         # 向后消除：该过程从所有特征集开始。通过逐步删除集合中剩余的最差特征。
         # 参数estimator为基模型
 
-        selector = RFECV(estimator=model)
+        selector = RFECV(estimator=model, scoring=self.score)
         selector.fit_transform(self.train_X, self.train_y)
 
         model_name = str(model).split('(')[0]
@@ -213,6 +214,7 @@ class Score_of_features(object):
                        forward=True,
                        floating=False,
                        # scoring='neg_mean_squared_error',
+                       scoring=self.score,
                        cv=0)
         selector.fit(self.train_X, self.train_y)
 
@@ -344,24 +346,24 @@ class Score_of_features(object):
         fig.tight_layout()
         plt.show()
 
-    def selec_by_features_random_weight(self, model=None):
-        train_X, val_X, train_y, val_y = train_test_split(self.train_X, self.train_y, random_state=1)
-        if not model:
-            mymodel = LinearRegression()
-        else:
-            mymodel= model
-
-        from eli5.sklearn import PermutationImportance
-        perm = PermutationImportance(mymodel, n_iter=5, random_state=1024, cv=5)
-        perm.fit(train_X.values, train_y.values)
-
-        sc = [abs(x) for x in perm.feature_importances_]
-        sum_sc = sum(sc)
-        featureScore = [round(s / sum_sc, 4) for s in sc]
-        model_name = str(model).split('(')[0]
-        print(model_name + 'by random features is finished')
-
-        return featureScore
+    # def selec_by_features_random_weight(self, model=None):
+    #     train_X, val_X, train_y, val_y = train_test_split(self.train_X, self.train_y, random_state=1)
+    #     if not model:
+    #         mymodel = LinearRegression()
+    #     else:
+    #         mymodel= model
+    #
+    #     from eli5.sklearn import PermutationImportance
+    #     perm = PermutationImportance(mymodel, n_iter=5, random_state=1024, cv=5)
+    #     perm.fit(train_X.values, train_y.values)
+    #
+    #     sc = [abs(x) for x in perm.feature_importances_]
+    #     sum_sc = sum(sc)
+    #     featureScore = [round(s / sum_sc, 4) for s in sc]
+    #     model_name = str(model).split('(')[0]
+    #     print(model_name + 'by random features is finished')
+    #
+    #     return featureScore
 
     def score_of_Filter(self):
         result = pd.DataFrame(index=self.continuous_feature_names)
