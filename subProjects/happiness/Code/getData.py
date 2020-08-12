@@ -24,9 +24,19 @@ birth_features = ['birth', 's_birth', 'f_birth',  'm_birth']
 time_features = ['survey_time',  'join_party', 'marital_1st', 'marital_now']
 income = ['income', 'family_income', 'inc_exp', 's_income']
 family = ['family_m', 'son', 'daughter', 'minor_child', ]
-num_features = ['religion_freq', 'floor_area', 'height_cm', 'weight_jin', 'work_yr']
+other_features = ['religion_freq', 'floor_area', 'height_cm', 'weight_jin', 'work_yr']
 public_service = ['public_service_1', 'public_service_2', 'public_service_3', 'public_service_4', 'public_service_5',
                   'public_service_6', 'public_service_7', 'public_service_8', 'public_service_9']
+num_features = income+family+other_features+public_service
+object_feafure = []
+categorical_features = []
+for f,t in zip(columns, train_data.dtypes):
+    if str(t) == 'object':
+        object_feafure.append(f)
+    else:
+        if f not in num_features+birth_features+time_features+[label]:
+            categorical_features.append(f)
+
 
 # categorical_features = ['model', 'brand', 'bodyType', 'fuelType', 'gearbox']
 # run_analysis.analysis_main(train_data, columns, label=label, categorical_features=categorical_features, num_features=num_features)

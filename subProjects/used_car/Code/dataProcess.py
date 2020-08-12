@@ -170,8 +170,8 @@ Embedded_models = [LogisticRegression(), LGBMRegressor()]
 getScores = ScoreFeatures.Score_of_features(analysis_data, x_train.columns, 'price', 'neg_mean_absolute_error')
 score_df = getScores.score_main(Wrapper_models=Wrapper_models, Embedded_models=Embedded_models)
 
-getScores.figs_of_RFE(model=LogisticRegression())
-getScores.figs_of_SFS(model=LogisticRegression())
+# getScores.figs_of_RFE(model=LogisticRegression())
+# getScores.figs_of_SFS(model=LogisticRegression())
 
 mean_s = score_df.loc[:, 'mean score'].sort_index(axis=0, ascending=False, by=['mean score'])
 print(mean_s.head(20))
