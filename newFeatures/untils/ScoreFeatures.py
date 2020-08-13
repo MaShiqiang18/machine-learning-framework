@@ -101,6 +101,8 @@ class Score_of_features(object):
         sc = [abs(x) for x in selector.variances_]
         sum_sc = sum(sc)
         featureScore = [round(s/sum_sc, 4) for s in sc]
+
+        print('Get variance score')
         return featureScore
 
     # 假设检验-->卡方检验
@@ -122,6 +124,7 @@ class Score_of_features(object):
         sc = [abs(x) for x in selector.scores_]
         sum_sc = sum(sc)
         featureScore = [round(s/sum_sc, 4) for s in sc]
+        print('Get chi2 score')
         return featureScore
 
     # 相关系数-->皮尔逊相关系数
@@ -136,6 +139,7 @@ class Score_of_features(object):
         sc = [abs(x) for x in selector.scores_]
         sum_sc = sum(sc)
         featureScore = [round(s/sum_sc, 4) for s in sc]
+        print('Get pearsonr score')
         return featureScore
 
 
@@ -158,6 +162,7 @@ class Score_of_features(object):
         sc = [abs(x) for x in selector.scores_]
         sum_sc = sum(sc)
         featureScore = [round(s/sum_sc, 4) for s in sc]
+        print('Get mic score')
         return featureScore
 
     """
