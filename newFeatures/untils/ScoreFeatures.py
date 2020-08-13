@@ -416,12 +416,13 @@ class Score_of_features(object):
             if not models:
                 models = self.linearRegressionModel + self.nonlinearRegressionModel
             for m in models:
-                if m in self.linearRegressionModel:
-                    model_name = str(m).split('(')[0]
+                model_name = str(m).split('(')[0]
+                linearRegressionModels = [str(model).split('(')[0] for model in self.linearRegressionModel]
+                treeRegressionModels = [str(model).split('(')[0] for model in self.treeRegressionModel]
+                if model_name in linearRegressionModels:
                     mlmScore = self.score_of_linearmodel(m)
                     result['Embedded_' + model_name] = mlmScore
-                elif m in self.treeRegressionModel:
-                    model_name = str(m).split('(')[0]
+                elif model_name in treeRegressionModels:
                     mnlmScore = self.score_of_nonlinearmodel(m)
                     result['Embedded_' + model_name] = mnlmScore
                 else:
@@ -431,12 +432,13 @@ class Score_of_features(object):
             if not models:
                 models = self.linearClassModel + self.nonlinearClassModel
             for m in models:
-                if m in self.linearClassModel:
-                    model_name = str(m).split('(')[0]
+                model_name = str(m).split('(')[0]
+                linearClassModels = [str(model).split('(')[0] for model in self.linearClassModel]
+                treeClassModels = [str(model).split('(')[0] for model in self.treeClassModel]
+                if model_name in linearClassModels:
                     mlmScore = self.score_of_linearmodel(m)
                     result['Embedded_' + model_name] = mlmScore
-                elif m in self.treeClassModel:
-                    model_name = str(m).split('(')[0]
+                elif model_name in treeClassModels:
                     mnlmScore = self.score_of_nonlinearmodel(m)
                     result['Embedded_' + model_name] = mnlmScore
                 else:
