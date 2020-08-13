@@ -468,9 +468,9 @@ class Score_of_features(object):
 
         for i in range(result.shape[1]):
             if i < result.shape[1] - 3:
-                plt.plot(result.index, result.iloc[:, i], label=result.columns[i])
+                plt.plot(range(result.shape[0]), result.iloc[:, i], label=result.columns[i])
             else:
-                plt.plot(result.index, result.iloc[:, i], linewidth=3, label=result.columns[i])
+                plt.plot(range(result.shape[0]), result.iloc[:, i], linewidth=3, label=result.columns[i])
         plt.legend()
         plt.show()
 
