@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 from subProjects.used_car.Code.config import ParamConfig
 from preProcess.untils import dataPreprocess
-from newFeatures.untils import CodeFeatures
+from newFeatures.untils import CodeFeatures, ReduceDimension
 from newFeatures.main import produceFeatures as RFP
 from preProcess.main import run_preprocess
 from newFeatures.untils import NewFeatures, ScoreFeatures
@@ -190,7 +190,7 @@ print('压缩前有特征：{}'.format(x_train.shape[1]))
 pca_dim = 200
 if pca_dim > x_train.shape[1]:
     pca_dim = x_train.shape[1]
-X_train_pca, X_test_pca = CodeFeatures.dimen_reduct_by_pca(x_train, x_test, pca_dim=pca_dim)
+X_train_pca, X_test_pca = ReduceDimension.dimen_reduct_by_pca(x_train, x_test, pca_dim=pca_dim)
 print('从初始{}个特征压缩到{}个特征'.format(x_train.shape[1],X_train_pca.shape[1]))
 print('最终训练集大小：', X_train_pca.shape)
 print('最终测试集大小：', X_test_pca.shape)

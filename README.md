@@ -108,7 +108,9 @@ ____
                   
 #### ScoreFeatures.py
 同SelectFeatures.py的原理，统计出每种方法所有特征的重要性（每一种方法所有特征的重要性得分和为1），求出各个特征所有方法得到的得分的均值、最大值、中值，并绘制得分折线图，返回一个得分表
-                           
+           
+#### ReduceDimension.py
+使用PCA进行特征降维
 ____                           
 ## 建模训练--trainModels
 ### main：
@@ -151,7 +153,9 @@ ____
          
 #### stepBystep_demo.py
 逐步调参的demo
-         
+ 
+#### hyperopt_demo.py        
+使用Hyperopt调参的demo
  ____
          
 ## 子项目集--subProjects
