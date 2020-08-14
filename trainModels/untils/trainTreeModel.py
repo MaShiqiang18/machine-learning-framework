@@ -53,11 +53,11 @@ class loadTreeModel(object):
             return None
 
 
-    def LGB_train(self,X_train, X_valid, labels_train, labels_valid, X_test, lgb_param, retrain):
+    def LGB_train(self,X_train, X_valid, labels_train, labels_valid, X_test, lgb_param):
         trn_data = lgb.Dataset(X_train.values, labels_train)
         val_data = lgb.Dataset(X_valid.values, labels_valid)
 
-        if not retrain:
+        if not self.config.retrain:
             # 调用已有模型进行增量训练
             model_load = self.load_model()
             if not model_load:
@@ -95,13 +95,13 @@ class loadTreeModel(object):
         return val_lgb_pre, test_lgb_pre, score_lgb
 
 
-    def XGB_train(self,X_train, X_valid, labels_train, labels_valid, X_test, xgb_params, retrain):
+    def XGB_train(self,X_train, X_valid, labels_train, labels_valid, X_test, xgb_params):
         trn_data = xgb.DMatrix(X_train.values, labels_train)
         val_data = xgb.DMatrix(X_valid.values, labels_valid)
 
         watchlist = [(trn_data, 'train'), (val_data, 'valid_data')]
 
-        if not retrain:
+        if not self.config.retrain:
             # 调用已有模型进行增量训练
             model_load = self.load_model()
             if not model_load:

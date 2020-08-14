@@ -5,6 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import cross_val_score
+from sklearn.preprocessing import MinMaxScaler
 # 基模型
 from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import Ridge, RidgeClassifier
@@ -95,8 +96,11 @@ class Score_of_features(object):
         # 移除那些方差低于某个阈值，即特征值变动幅度小于某个范围的特征，这一部分特征的区分度较差，进行移除。
         # 返回值为特征选择后的数据
         # 参数threshold为方差的阈值
+        min_max_scaler = MinMaxScaler()
+        data = min_max_scaler.fit_transform(self.train_X.values)
+
         selector = VarianceThreshold()
-        selector.fit_transform(self.train_X)
+        selector.fit_transform(data)
 
         sc = [abs(x) for x in selector.variances_]
         sum_sc = sum(sc)
@@ -372,8 +376,8 @@ class Score_of_features(object):
 
     def score_of_Filter(self):
         result = pd.DataFrame(index=self.continuous_feature_names)
-        varScore = self.score_of_var()
-        result['Variance'] = varScore
+        # varScore = self.score_of_var()
+        # result['Variance'] = varScore
         if self.T == 'R':
             pScore = self.score_of_pearsonr()
             result['Pearsonr'] = pScore
@@ -453,10 +457,10 @@ class Score_of_features(object):
         result_Filter = self.score_of_Filter()
         print('=====> Filter scores:', result_Filter.shape[1])
         result = pd.concat([result, result_Filter], axis=1)
-        # print('\nWrapper start...')
-        # result_Wrapper = self.score_of_Wrapper(models=Wrapper_models)
-        # print('=====> Wrapper scores:', result_Wrapper.shape[1])
-        # result = pd.concat([result, result_Wrapper], axis=1)
+        print('\nWrapper start...')
+        result_Wrapper = self.score_of_Wrapper(models=Wrapper_models)
+        print('=====> Wrapper scores:', result_Wrapper.shape[1])
+        result = pd.concat([result, result_Wrapper], axis=1)
         print('\nEmbedded start...')
         result_Embedded = self.score_of_Embedded(models=Embedded_models)
         print('=====> Embedded scores:', result_Embedded.shape[1])

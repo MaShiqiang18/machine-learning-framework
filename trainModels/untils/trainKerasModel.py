@@ -32,7 +32,7 @@ class loadKerasModel(object):
             model = None
         return model
 
-    def train(self, X_train, X_val, y_train, y_val, X_test, params, retrain=False, save_type='J'):
+    def train(self, X_train, X_val, y_train, y_val, X_test, params, save_type='J'):
 
         if 'epochs' in params:
             epochs = params['epochs']
@@ -142,7 +142,7 @@ class loadKerasModel(object):
             return None
         #########################################################
 
-        if not retrain:
+        if not self.config.retrain:
             # 调用已有模型进行增量训练
             load_model_path = save_model_path
             if os.path.exists(load_model_path):
