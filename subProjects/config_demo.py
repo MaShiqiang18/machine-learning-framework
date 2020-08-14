@@ -94,6 +94,8 @@ class ParamConfig:
         self.saveModel = 'J'
         self.treeModelLib = ['LGB', 'XGB']
         self.kerasModelLib = ['Resreg', 'fc_6Dmodel', 'fc_8Dmodel']
+        # 是否选择增量训练，True为不选择增量训练
+        self.retrain = True
         self.modelType = 'LGB'
         if self.modelType not in self.treeModelLib + self.kerasModelLib:
             print('请在training下的config.py中确定合适模型类型！！！')
