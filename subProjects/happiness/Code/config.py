@@ -25,6 +25,7 @@ class Path_data(object):
     def __init__(self, mark, cleanAllData, cleanMarkData, train_file, test_file):
         path_up = os.path.abspath('../Data/')
         self.dataOriPath = path_up + r'/train_test_data'
+        self.dataPrePath = path_up + r'/prediction'
         self.path_train_XY = self.dataOriPath + train_file
         self.path_test_XY = self.dataOriPath + test_file
 
@@ -42,6 +43,8 @@ class Path_data(object):
             os.makedirs(path_up)
         if not os.path.exists(self.dataOriPath):
             os.makedirs(self.dataOriPath)
+        if not os.path.exists(self.dataPrePath):
+            os.makedirs(self.dataPrePath)
         if not os.path.exists(self.notesPath):
             os.makedirs(self.notesPath)
         else:

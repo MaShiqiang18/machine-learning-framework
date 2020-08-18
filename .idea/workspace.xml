@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1661b59b-8ec7-415c-9420-50b71f93774e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/preProcess/untils/dataPreprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/preProcess/untils/dataPreprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subProjects/config_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/subProjects/config_demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subProjects/happiness/Code/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/subProjects/happiness/Code/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trainModels/main/run_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/trainModels/main/run_train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,29 +24,30 @@
     <session id="1107461421">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="md" value="1" />
-          <entry key="py" value="21" />
+          <entry key="py" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
-          <entry key="Python" value="21" />
+          <entry key="Python" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="23" />
-          <entry key="py" value="122" />
+          <entry key="py" value="126" />
           <entry key="txt" value="11" />
         </counts>
       </usages-collector>
@@ -52,7 +55,7 @@
         <counts>
           <entry key="Markdown" value="23" />
           <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Python" value="122" />
+          <entry key="Python" value="126" />
         </counts>
       </usages-collector>
     </session>
@@ -60,46 +63,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subProjects/used_car/Code/config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2565">
-              <caret line="96" column="31" lean-forward="true" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subProjects/config_demo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="103" column="40" lean-forward="true" selection-start-line="103" selection-start-column="40" selection-end-line="103" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/preProcess/untils/dataPreprocess.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="246" column="56" lean-forward="true" selection-start-line="246" selection-start-column="56" selection-end-line="246" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/newFeatures/untils/CodeFeatures.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1505">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/newFeatures/untils/NewFeatures.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="115" column="7" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="7" />
+            <state relative-caret-position="-233">
+              <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
               <folding>
                 <element signature="e#14#33#0" expanded="true" />
               </folding>
@@ -107,32 +74,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trainModels/untils/trainTreeModel.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/subProjects/config_demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2646">
-              <caret line="103" column="35" lean-forward="true" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
-              <folding>
-                <element signature="e#14#23#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="166">
+              <caret line="28" column="58" lean-forward="true" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tuningParams/untils/bayesianOpt_demo.py">
+        <entry file="file://$PROJECT_DIR$/trainModels/main/run_train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" selection-start-line="11" selection-end-line="21" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tuningParams/untils/hyperopt_demo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="999">
-              <caret line="41" column="36" lean-forward="true" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+            <state relative-caret-position="574">
+              <caret line="332" column="59" lean-forward="true" selection-start-line="332" selection-start-column="59" selection-end-line="332" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -140,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subProjects/happiness/Code/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2268">
-              <caret line="85" column="23" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="23" />
+            <state relative-caret-position="385">
+              <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -149,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/subProjects/used_car/Code/dataAnalysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
+            <state relative-caret-position="594">
               <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
               <folding>
                 <element signature="e#14#33#0" expanded="true" />
@@ -207,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/models/FC_8Dmodel.py" />
         <option value="$PROJECT_DIR$/models/FC_6Dmodel.py" />
         <option value="$PROJECT_DIR$/training/config.py" />
         <option value="$PROJECT_DIR$/training/untils/defindMetrics.py" />
@@ -243,8 +197,6 @@
         <option value="$PROJECT_DIR$/subProjects/used_car/Code/dataAnalysis.py" />
         <option value="$PROJECT_DIR$/analysis/untils/dataAnalysis.py" />
         <option value="$PROJECT_DIR$/preProcess/main/run_preprocess.py" />
-        <option value="$PROJECT_DIR$/newFeatures/untils/NewFeatures.py" />
-        <option value="$PROJECT_DIR$/subProjects/happiness/Code/config.py" />
         <option value="$PROJECT_DIR$/analysis/main/run_analysis.py" />
         <option value="$PROJECT_DIR$/subProjects/happiness/Code/getData.py" />
         <option value="$PROJECT_DIR$/tuningParams/untils/hyperopt_demo.py" />
@@ -256,8 +208,11 @@
         <option value="$PROJECT_DIR$/subProjects/used_car/Code/config.py" />
         <option value="$PROJECT_DIR$/trainModels/untils/trainTreeModel.py" />
         <option value="$PROJECT_DIR$/trainModels/untils/trainKerasModel.py" />
-        <option value="$PROJECT_DIR$/subProjects/config_demo.py" />
         <option value="$PROJECT_DIR$/preProcess/untils/dataPreprocess.py" />
+        <option value="$PROJECT_DIR$/newFeatures/untils/NewFeatures.py" />
+        <option value="$PROJECT_DIR$/trainModels/main/run_train.py" />
+        <option value="$PROJECT_DIR$/subProjects/happiness/Code/config.py" />
+        <option value="$PROJECT_DIR$/subProjects/config_demo.py" />
       </list>
     </option>
   </component>
@@ -273,7 +228,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,51 +238,13 @@
             <path>
               <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="newFeatures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="newFeatures" type="462c0819:PsiDirectoryNode" />
-              <item name="untils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="preProcess" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="preProcess" type="462c0819:PsiDirectoryNode" />
-              <item name="untils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
               <item name="subProjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="trainModels" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="trainModels" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine-learning-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine-learning-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="trainModels" type="462c0819:PsiDirectoryNode" />
-              <item name="untils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -553,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597385787390</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="V-1.1">
+      <created>1597719063756</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597719063756</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -807,16 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2187">
           <caret line="122" column="58" selection-start-line="122" selection-start-column="58" selection-end-line="122" selection-end-column="58" />
-          <folding>
-            <element signature="e#14#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trainModels/main/run_train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4563">
-          <caret line="179" column="41" lean-forward="true" selection-start-line="179" selection-start-column="41" selection-end-line="179" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -830,7 +743,7 @@
     <entry file="file://$PROJECT_DIR$/subProjects/used_car/Code/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2565">
-          <caret line="96" column="31" lean-forward="true" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="31" />
+          <caret line="96" column="31" selection-start-line="96" selection-start-column="8" selection-end-line="96" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -858,16 +771,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subProjects/happiness/Code/config.py">
+    <entry file="file://$PROJECT_DIR$/newFeatures/untils/CodeFeatures.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2268">
-          <caret line="85" column="23" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="23" />
+        <state relative-caret-position="27">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preProcess/untils/dataPreprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="246" column="56" selection-start-line="246" selection-start-column="56" selection-end-line="246" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newFeatures/untils/NewFeatures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="114" column="5" lean-forward="true" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+          <folding>
+            <element signature="e#14#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainModels/main/run_train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="332" column="59" lean-forward="true" selection-start-line="332" selection-start-column="59" selection-end-line="332" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subProjects/used_car/Code/dataAnalysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
+        <state relative-caret-position="594">
           <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding>
             <element signature="e#14#33#0" expanded="true" />
@@ -875,34 +812,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/subProjects/happiness/Code/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="27" selection-start-line="27" selection-end-line="27" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/subProjects/config_demo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="103" column="40" lean-forward="true" selection-start-line="103" selection-start-column="40" selection-end-line="103" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preProcess/untils/dataPreprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="246" column="56" lean-forward="true" selection-start-line="246" selection-start-column="56" selection-end-line="246" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newFeatures/untils/CodeFeatures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1505">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newFeatures/untils/NewFeatures.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="115" column="7" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="7" />
-          <folding>
-            <element signature="e#14#33#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="166">
+          <caret line="28" column="58" lean-forward="true" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
         </state>
       </provider>
     </entry>

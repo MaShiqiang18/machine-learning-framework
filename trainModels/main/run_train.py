@@ -321,10 +321,14 @@ def train_model(X_train, X_test, param, config, use_trainedModel=False):
 
     train_file = predict_final_dir + "/{}_train_{}.csv".format(config.mark, score_final)
     pre_sumRuns_train.to_csv(train_file, index=True)
+    train_file_cp = config.path_data.dataPrePath + "/{}_train_{}.csv".format(config.mark, score_final)
+    pre_sumRuns_train.to_csv(train_file_cp, index=True)
 
     test_file = predict_final_dir + "/{}_test_{}.csv".format(config.mark, score_final)
     pre_sumRuns_test = pd.DataFrame(pre_sumRuns_test, index=X_test.index)
     pre_sumRuns_test.to_csv(test_file, index=True)
+    test_file_cp = config.path_data.dataPrePath + "/{}_test_{}.csv".format(config.mark, score_final)
+    pre_sumRuns_test.to_csv(test_file_cp, index=True)
 
     return pre_sumRuns_train, pre_sumRuns_test, score_final
 
