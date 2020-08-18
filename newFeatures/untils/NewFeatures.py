@@ -117,9 +117,10 @@ def cut_group(df, cols, num_bins=50, add_new=True):
     print('对特征：{}进行分桶（{}）操作'.format(cols, num_bins))
     features_ori = df.columns
     for col in cols:
-        all_range = int(df[col].max()-df[col].min())
-        bin = [i*all_range/num_bins for i in range(all_range)]
-        df[col+'_bin'] = pd.cut(df[col], bin, labels=False)
+        # all_range = int(df[col].max()-df[col].min())
+        # bin = [i*all_range/num_bins for i in range(all_range)]
+        # df[col+'_bin'] = pd.cut(df[col], bin, labels=False)
+        df[col + '_bin'] = pd.cut(df[col], num_bins, labels=range(num_bins))
 
     if add_new:
         return df

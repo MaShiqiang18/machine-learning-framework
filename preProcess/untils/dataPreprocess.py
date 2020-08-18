@@ -249,6 +249,8 @@ def reduce_mem_usage(df, time_features=None):
                     df[col] = df[col].astype(np.float32)
                 else:
                     df[col] = df[col].astype(np.float64)
+            elif str(col_type)[:4] == 'bool':
+                df[col] = df[col].astype(np.int8)
             else:
                 print('将特征：{}，从原数据类型：{}转化为category数据类型'.format(col, str(col_type)))
                 df[col] = df[col].astype('category')
