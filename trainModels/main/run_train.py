@@ -137,7 +137,7 @@ def train_model(X_train, X_test, param, config, use_trainedModel=False):
                     index_base = [i for i in range(numTrain) if randnum[i] < config.bootstrap_ratio]
                     index_meta = [i for i in range(numTrain) if randnum[i] >= config.bootstrap_ratio]
 
-                model_name = 'run_{}_fold_{}_bag_{}'.format(run, fold_, n)
+                model_name = 'run_{}_fold_{}_bag_{}'.format(run+1, fold_+1, n+1)
 
                 if use_trainedModel:
                     joblib_models_path = config.path_data.saveModelPath + '/joblib_models/%s/' % config.modelType\
