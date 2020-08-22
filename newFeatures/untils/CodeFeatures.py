@@ -44,6 +44,9 @@ def targetEncoding(X_data,Y_data,X_test, col, group_by_features, enc_stats=None)
     :param enc_stats: stats_default_dict中的keys任选
     :return:
     """
+    index_ori = X_data.index
+    X_data.reset_index(drop=True, inplace=True)
+
     enc_cols = []
     stats_default_dict = {
         'max': X_data[col].max(),
@@ -78,6 +81,7 @@ def targetEncoding(X_data,Y_data,X_test, col, group_by_features, enc_stats=None)
                 X_data.loc[val_idx, '{}_target_{}_{}'.format(f, col, stat)] = val_x['{}_target_{}_{}'.format(f, col, stat)].values
                 X_test['{}_target_{}_{}'.format(f, col, stat)] += test_x['{}_target_{}_{}'.format(f, col, stat)].values / skf.n_splits
 
+    X_data.index = index_ori
     return X_data, X_test
 
 
