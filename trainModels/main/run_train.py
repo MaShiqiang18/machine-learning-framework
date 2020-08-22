@@ -308,26 +308,26 @@ def train_model(X_train, X_test, param, config, use_trainedModel=False):
     pre_sumRuns_train = pre_sumRuns_train/config.n_runs
 
     pre_sumRuns_train = pd.DataFrame(pre_sumRuns_train, index=X_train.index)
-    score_final = int(myMetrics.metricsFunc(pre_sumRuns_train, y_train))
+    score_final = myMetrics.metricsFunc(pre_sumRuns_train, y_train)
     
     info_14 = '-------------------------------------------------------------------------------\n' + \
             ' '*null + '-------------------------------------------------------------------------------\n' + \
-            ' '*null + '最终得分: %d\n\n\n\n\n\n' % score_final
+            ' '*null + '最终得分: %f\n\n\n\n\n\n' % score_final
     Mylog.info(info_14)
 
     predict_final_dir = config.path_data.predictPath + '/final/%s' % config.modelType
     if not os.path.exists(predict_final_dir):
         os.makedirs(predict_final_dir)
 
-    train_file = predict_final_dir + "/{}_train_{}.csv".format(config.mark, score_final)
+    train_file = predict_final_dir + "/{}_train_{:<8.4f}.csv".format(config.mark, score_final)
     pre_sumRuns_train.to_csv(train_file, index=True)
-    train_file_cp = config.path_data.dataPrePath + "/{}_train_{}.csv".format(config.mark, score_final)
+    train_file_cp = config.path_data.dataPrePath + "/{}_train_{:<8.4f}.csv".format(config.mark, score_final)
     pre_sumRuns_train.to_csv(train_file_cp, index=True)
 
-    test_file = predict_final_dir + "/{}_test_{}.csv".format(config.mark, score_final)
+    test_file = predict_final_dir + "/{}_test_{:<8.4f}.csv".format(config.mark, score_final)
     pre_sumRuns_test = pd.DataFrame(pre_sumRuns_test, index=X_test.index)
     pre_sumRuns_test.to_csv(test_file, index=True)
-    test_file_cp = config.path_data.dataPrePath + "/{}_test_{}.csv".format(config.mark, score_final)
+    test_file_cp = config.path_data.dataPrePath + "/{}_test_{:<8.4f}.csv".format(config.mark, score_final)
     pre_sumRuns_test.to_csv(test_file_cp, index=True)
 
     return pre_sumRuns_train, pre_sumRuns_test, score_final
