@@ -95,7 +95,7 @@ class ParamConfig:
         self.metrics_name = 'MAE'
         # sklearn下模型保存方式，可选：'J'(joblib),'P'(pickle),''(不保存)
         self.saveModel = 'J'
-        self.treeModelLib = ['LGB', 'XGB']
+        self.treeModelLib = ['GBDT', 'CGB', 'LGB', 'XGB']
         self.kerasModelLib = ['Resreg', 'fc_6Dmodel', 'fc_8Dmodel']
         # 是否选择增量训练，True为不选择增量训练
         self.retrain = True
